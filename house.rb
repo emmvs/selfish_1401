@@ -1,0 +1,2 @@
+def House
+end
