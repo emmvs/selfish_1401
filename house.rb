@@ -13,3 +13,11 @@ end
 house = House.new("Kilen", "Hackespacke", 50, 50)
 # p house_in_sweden #=> ?????
 puts "In #{house.name} lives the ghost #{house.ghost}. 👻"
+
+# Inheritance
+
+
+# Class methods
+
+
+# Self
