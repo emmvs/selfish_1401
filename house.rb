@@ -1,6 +1,6 @@
 require_relative "./building"
 
-class House < Building
+class House < Building 
 end
 
 house = House.new("Kilen", 50, 50, "Hackespacke")

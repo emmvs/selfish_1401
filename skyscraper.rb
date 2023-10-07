@@ -1,16 +1,14 @@
 require_relative "./building"
 
 class Skyscraper < Building
-  # attr_reader :name, :width, :length, :ghost
 
-  # def initialize(name, width, length, ghost)
-  #   @name = name
-  #   @width = width
-  #   @length = length
-  #   @ghost = ghost
-  # end
+  # Class method
+  def self.cities
+    ["New York City", "Mexico City", "Dubai", "Shanghai"]
+  end
 end
 
 # Create a new skyscraper
 skyscraper = Skyscraper.new("Empire State Building", 423, 56, "Evelyn Francis McHale")
-p skyscraper
+# p skyscraper
+puts "There are skyscrapers in #{Skyscraper.cities.join(", ")}"
