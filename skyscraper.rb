@@ -1,12 +1,14 @@
-class Skyscraper
-  attr_reader :name, :width, :length, :ghost
+require_relative "./building"
 
-  def initialize(name, width, length, ghost)
-    @name = name
-    @width = width
-    @length = length
-    @ghost = ghost
-  end
+class Skyscraper < Building
+  # attr_reader :name, :width, :length, :ghost
+
+  # def initialize(name, width, length, ghost)
+  #   @name = name
+  #   @width = width
+  #   @length = length
+  #   @ghost = ghost
+  # end
 end
 
 # Create a new skyscraper

@@ -1,6 +1,24 @@
 # ?Behavior & States
 
 # class House
+  # attr_reader :name, :width, :length, :ghost
+
+  # def initialize(name, ghost, width, length)
+
+  #   # Instance methods
+  #   @name = name
+  #   @ghost = ghost
+  #   @width = width
+  #   @length = length
+  # end
+
+  # def area
+  #   @length * @width
+  # end
+
+  # def name
+  #   @name
+  # end
 # end
 
   # Encapsulation

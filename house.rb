@@ -1,27 +1,12 @@
-class House
-  attr_reader :name, :width, :length, :ghost
+require_relative "./building"
 
-  def initialize(name, ghost, width, length)
-
-    # Instance methods
-    @name = name
-    @ghost = ghost
-    @width = width
-    @length = length
-  end
-
-  def area
-    @length * @width
-  end
-
-  # def name
-  #   @name
-  # end
+class House < Building
 end
 
-house = House.new("Kilen", "Hackespacke", 50, 50)
+house = House.new("Kilen", 50, 50, "Hackespacke")
 p house #=> ?????
 puts "In #{house.name} lives the ghost #{house.ghost}. 👻"
 
-p house.area
-p house.name
+# p house.area
+# p house.name
+p house.who_haunts_this_house
