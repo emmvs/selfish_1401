@@ -1,7 +1,14 @@
 require_relative "./building"
+require_relative "./butler"
 
 class Castle < Building
   attr_accessor :butler
+
+  def initialize(name, length, width, ghost, ruler)
+    super(name, length, width, ghost)
+    @ruler = ruler
+    @butler = Butler.new(self)
+  end
 
   def has_a_butler?
     @butler != nil ? "yes, yes, we is rich" : "noooooo butler, we are poor"
@@ -34,7 +41,7 @@ puts "- It has an area of #{castle.area} square meters 🏰"
     super(nights) + concierge_fee
   end
 
-  
+
 # Normal post
     def display
     puts "Caption: #{caption}"
