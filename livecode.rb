@@ -3,14 +3,9 @@ class Animal
   def initialize(name)
     @name = name
   end
-end
 
-describe Animal do
-  describe "#initialize" do
-    it "creates an instance of an Animal" do
-      animal = Animal.new("Sloth")
-      expect(animal).to be_a(Animal)
-    end
+  def self.habitats
+    %w[Jungle Desert Grassland Forest Ocean Mountain]
   end
 end
 
@@ -47,6 +42,7 @@ end
 
 # def phyla
 #   ["Moss", "Sponge"]
+# %w[Porifera Coelenterata Platyhelminthes Nematoda Annelida Arthropoda Mollusca Echinodermata Protochordata Vertebrata]
 # end
 
 
